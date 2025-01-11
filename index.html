@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking Website</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            color: #FF6347; 
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .navbar ul li a:hover {
+            color: #FF6347;
+        }
+
+        .hero {
+            background-image: url('https://media.istockphoto.com/id/1325270856/photo/christmas-cookies.jpg?s=612x612&w=0&k=20&c=QdKnj8Sbtzrz1NaRsSrx2uue7DrtVItkd14jNSduyCg=');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color:red;
+        }
+
+        .hero p {
+            color:red;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 10%;
+            background-color: #f4f4f4;
+        }
+
+        .info-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+
+        .info-card h3 {
+            margin-bottom: 10px;
+            color: #FF6347;
+        }
+
+        .info-card p {
+            color: #777;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #e04a30;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>SweetTooth</h1>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#" class="btn">Shop Online</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Our Baking World</h2>
+            <p>Discover delicious recipes and tips!</p>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="info-card">
+            <h3>BEST COOKIES</h3>
+            <p>🍪 "Thank you for choosing SweetTooth!
+                Indulge in the warmth of our freshly baked cookies. Made with love and the finest ingredients, each bite is a little taste of happiness.</p>
+            <img alt="cookies" width="150" height="150" src="cookie.jpg">
+        </div>
+        <div class="info-card">
+            <h3>WEDDING CAKES</h3>
+            <p>🍰 "Thank you for choosing SweetTooth!
+                Every cake we bake is a celebration of flavor, crafted with love and the finest ingredients. Whether it’s a special occasion or a sweet treat just for you, we hope our cakes bring a smile to your day.</p>
+            <img alt="cakes" width="150" height="150" src="cake.jpg">
+        </div>
+        <div class="info-card">
+            <h3>TARTS AND PIES</h3>
+            <p>🍒 "Thank you for choosing SweetTooth!
+                Our tarts and pies are baked to perfection with the freshest fruits and finest ingredients. Whether you’re savoring a tart or sharing a pie, we hope it adds a little sweetness to your day.</p>
+            <img alt="profile pic" width="150" height="150" src="tart.jpg">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Baking Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Redirecting to the shop page...');
+        });
+    </script>
+
+</body>
+</html>
